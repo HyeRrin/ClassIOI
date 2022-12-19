@@ -75,7 +75,7 @@ function NavTop() {
               <HeaderLink>로그인</HeaderLink>
             </StyledLink>
           )}
-          <StyledLink to="/mypage">
+          <StyledLink to="/mypage" aria-label="move to mypage">
             <FaRegHeart size="22" className="icon-like" />
           </StyledLink>
         </WrapUser>
