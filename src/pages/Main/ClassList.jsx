@@ -56,21 +56,37 @@ function ClassList({
     }
   };
 
+  function getParametersForUnsplash({ width, height, quality, format }) {
+    return `?w=${width}&h=${height}&q=${quality}&fm=${format}&fit=crop`;
+  }
+
   return (
     <ClassBox>
       <StyledLink to={`classes/detail/${classId}`}>
         <ClassImgBox>
-          <ClassImg src={thumbnail_image} />
+          <ClassImg
+            src={
+              thumbnail_image +
+              getParametersForUnsplash({
+                width: 260,
+                height: 200,
+                quality: 80,
+                format: 'jpg',
+              })
+            }
+            loading="lazy"
+            alt="thumbnail"
+          />
         </ClassImgBox>
         <Creator>{creator}</Creator>
         <ClassTitle>{classTitle}</ClassTitle>
         <LikeBox>
-          <FaHeart size="12" color="#a2a2a2" />
+          <FaHeart size="12" color="#ff5600" />
           <CountLike>{like_count}</CountLike>
         </LikeBox>
         <ClassPrice>{Number(price).toLocaleString()}원</ClassPrice>
       </StyledLink>
-      <LikeButton onClick={handleLike}>
+      <LikeButton onClick={handleLike} aria-label="찜하기">
         {isLike ? (
           <FaHeart className="icon-like" size="20" color="#ff5600" />
         ) : (
@@ -103,14 +119,18 @@ const LikeButton = styled.button`
 `;
 
 const ClassImgBox = styled.div`
+  width: 260px;
   height: 200px;
   border-radius: 5px;
   overflow: hidden;
 `;
 
 const ClassImg = styled.img`
+  /* max-width: 100%;
+  height: 100%; */
   width: 260px;
   height: 200px;
+  object-fit: cover;
   transition: all 0.2s linear;
   &:hover {
     transform: scale(1.2);
@@ -137,7 +157,7 @@ const LikeBox = styled.div`
 const CountLike = styled.span`
   margin-left: 3px;
   font-size: 13px;
-  color: #a2a2a2;
+  color: #ff5600;
 `;
 
 const ClassPrice = styled.p`

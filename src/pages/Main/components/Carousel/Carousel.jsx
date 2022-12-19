@@ -6,12 +6,28 @@ import 'slick-carousel/slick/slick-theme.css';
 import { CarouselImgData } from './CarouselImgData';
 
 function Carousel() {
+  function getParametersForUnsplash({ width, height, quality, format }) {
+    return `?w=${width}&h=${height}&q=${quality}&fm=${format}&fit=crop`;
+  }
+
   return (
     <CarouselContainer>
       <StyledSlider {...settings}>
         {CarouselImgData.map(image => (
           <ImageBox key={image.id}>
-            <Image src={image.url} alt="이미지 슬라이드" />
+            <Image
+              src={
+                image.url +
+                getParametersForUnsplash({
+                  width: 676,
+                  height: 415,
+                  quality: 80,
+                  format: 'jpg',
+                })
+              }
+              loading="lazy"
+              alt="이미지 슬라이드"
+            />
           </ImageBox>
         ))}
       </StyledSlider>
@@ -68,8 +84,6 @@ const ImageBox = styled.div`
 `;
 
 const Image = styled.img`
-  width: 676px;
-  height: 415px;
   border-radius: 5px;
 `;
 
@@ -82,14 +96,6 @@ const SlideControlBox = styled.div`
     margin-right: 25px;
   }
 `;
-
-const SlideIndex = styled.span`
-  padding: 5px;
-  font-size: 12px;
-  color: white;
-`;
-
-const SeparateIndex = styled(SlideIndex)``;
 
 const StyleLine = styled.div`
   margin: 0 80px 0 15px;
