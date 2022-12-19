@@ -21,24 +21,24 @@ function Main() {
   const fetchURL = searchParams.toString();
   const LIMIT = 12;
 
-  useEffect(() => {
-    searchParams.set('limit', LIMIT);
-    searchParams.set('offset', 0);
-    setSearchParams(searchParams);
+  // useEffect(() => {
+  //   searchParams.set('limit', LIMIT);
+  //   searchParams.set('offset', 0);
+  //   setSearchParams(searchParams);
 
-    if (Token) {
-      fetch(`${BASE_URL}/likes/getList`, {
-        headers: {
-          authorization: Token,
-        },
-      })
-        .then(res => res.json())
-        .then(data => {
-          console.log('data.message : ', data.message);
-          setLikedList(data.message);
-        });
-    }
-  }, []);
+  //   if (Token) {
+  //     fetch(`${BASE_URL}/likes/getList`, {
+  //       headers: {
+  //         authorization: Token,
+  //       },
+  //     })
+  //       .then(res => res.json())
+  //       .then(data => {
+  //         console.log('data.message : ', data.message);
+  //         setLikedList(data.message);
+  //       });
+  //   }
+  // }, []);
 
   // useEffect(() => {
   //   fetch(`${BASE_URL}/main?${fetchURL}`)

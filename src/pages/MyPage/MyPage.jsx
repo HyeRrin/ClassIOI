@@ -26,15 +26,16 @@ function MyPage() {
   };
 
   useEffect(() => {
-    fetch(`${BASE_URL}/likes/getList`, {
-      headers: {
-        authorization: token,
-      },
-    })
-      .then(res => res.json())
-      .then(data => {
-        setLikeList(data.message);
-      });
+    // fetch(`${BASE_URL}/likes/getList`, {
+    //   headers: {
+    //     authorization: token,
+    //   },
+    // })
+    //   .then(res => res.json())
+    //   .then(data => {
+    //     setLikeList(data.message);
+    //   });
+    setLikeList([1, 2, 3]);
   }, []);
 
   return (
