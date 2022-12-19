@@ -27,8 +27,6 @@ function ClassList({
     }
   }, [likedList]);
 
-  console.log('likedList : ', likedList);
-
   const handleLike = () => {
     if (!Token) {
       alert('찜하기를 위해 로그인을 해주세요!');
