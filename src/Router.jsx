@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Login from './pages/Login/Login';
-import KakaoLogin from './pages/Login/KakaoLogin';
-import Subscribe from './pages/Subscribe/Subscribe';
-import Payment from './pages/Payment/Payment';
-import LectureVideo from './pages/LectureVideo/LectureVideo';
-import CreatorCenter from './pages/CreatorCenter/CreatorCenter';
-import YesNav from './YesNav';
+const Login = lazy(() => import('pages/Login/Login'));
+const KakaoLogin = lazy(() => import('pages/Login/KakaoLogin'));
+const Subscribe = lazy(() => import('pages/Subscribe/Subscribe'));
+const Payment = lazy(() => import('pages/Payment/Payment'));
+const LectureVideo = lazy(() => import('pages/LectureVideo/LectureVideo'));
+const CreatorCenter = lazy(() => import('pages/CreatorCenter/CreatorCenter'));
+const YesNav = lazy(() => import('./YesNav'));
 
 const Router = () => {
   return (
