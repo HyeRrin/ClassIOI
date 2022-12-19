@@ -3,7 +3,7 @@ import Lecture from './components/Lecture/Lecture';
 import LectureList from './components/LectureList/LectureList';
 import { useSearchParams } from 'react-router-dom';
 import styled from 'styled-components';
-import BASE_URL from '/Users/galee/Desktop/FinalIOI/37-2nd-IOI-frontend/src/config.js';
+import BASE_URL from 'config';
 import VIDEOS from './mockData/video';
 import Nav from './components/Nav/Nav';
 

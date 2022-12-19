@@ -8,7 +8,7 @@ import {
   MAIN_CATEGORY,
   SUB_CATEGORY,
 } from './components/FilterAndSort/CategoryData';
-import BASE_URL from '/Users/galee/Desktop/FinalIOI/37-2nd-IOI-frontend/src/config.js';
+import BASE_URL from 'config';
 
 function Main() {
   const Token = localStorage.getItem('Token');
@@ -40,22 +40,22 @@ function Main() {
     }
   }, []);
 
-  useEffect(() => {
-    fetch(`${BASE_URL}/main?${fetchURL}`)
-      .then(res => res.json())
-      .then(data => {
-        setClassList(data.getFilter);
-      });
-  }, [searchParams]);
-
-  // Mock Data
   // useEffect(() => {
-  //   fetch(`data/Main/classListData.json`)
+  //   fetch(`${BASE_URL}/main?${fetchURL}`)
   //     .then(res => res.json())
   //     .then(data => {
-  //       setClassList(data);
+  //       setClassList(data.getFilter);
   //     });
-  // }, []);
+  // }, [searchParams]);
+
+  // Mock Data
+  useEffect(() => {
+    fetch(`data/Main/classListData.json`)
+      .then(res => res.json())
+      .then(data => {
+        setClassList(data);
+      });
+  }, []);
 
   const movePage = pageNumber => {
     searchParams.set('limit', LIMIT);
