@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { AiOutlineClose, AiFillFacebook } from 'react-icons/ai';
-import { RiKakaoTalkFill } from 'react-icons/ri';
+import { AiOutlineClose } from '@react-icons/all-files/ai/AiOutlineClose';
+import { AiFillFacebook } from '@react-icons/all-files/ai/AiFillFacebook';
+import { RiKakaoTalkFill } from '@react-icons/all-files/ri/RiKakaoTalkFill';
 import { BsTwitter } from 'react-icons/bs';
-import { FiLink2 } from 'react-icons/fi';
+import { FiLink2 } from '@react-icons/all-files/fi/FiLink2';
 
 function ShareModal({ setIsShareModal }) {
   const closeModal = () => {

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { FaHeart } from 'react-icons/fa';
-import { FaRegHeart } from 'react-icons/fa';
+import { FaHeart } from '@react-icons/all-files/fa/FaHeart';
+import { FaRegHeart } from '@react-icons/all-files/fa/FaRegHeart';
 import BASE_URL from 'config';
 
 function ClassList({
