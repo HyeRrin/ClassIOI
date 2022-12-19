@@ -25,7 +25,6 @@ function Carousel() {
                   format: 'jpg',
                 })
               }
-              loading="lazy"
               alt="이미지 슬라이드"
             />
           </ImageBox>

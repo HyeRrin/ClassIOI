@@ -74,7 +74,6 @@ function ClassList({
                 format: 'jpg',
               })
             }
-            loading="lazy"
             alt="thumbnail"
           />
         </ClassImgBox>
