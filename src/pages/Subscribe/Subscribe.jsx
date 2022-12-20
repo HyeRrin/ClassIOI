@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { FaAddressCard } from '@react-icons/all-files/fa/FaAddressCard';
 
@@ -53,17 +52,6 @@ const Title = styled.p`
   line-height: 40px;
   font-weight: bold;
   color: white;
-`;
-
-const CancelBtn = styled.button`
-  position: absolute;
-  top: 40px;
-  right: 45px;
-  background-color: transparent;
-  border: none;
-  font-size: 20px;
-  color: white;
-  cursor: pointer;
 `;
 
 const SubscribeBox = styled.div`
