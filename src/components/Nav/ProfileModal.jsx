@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { FaUserCircle } from '@react-icons/all-files/fa/FaUserCircle';

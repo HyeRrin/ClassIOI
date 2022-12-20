@@ -1,4 +1,3 @@
-import React from 'react';
 import NavTop from './NavTop';
 import NavBottom from './NavBottom';
 
