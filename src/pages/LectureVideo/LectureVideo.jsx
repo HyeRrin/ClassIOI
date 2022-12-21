@@ -14,9 +14,6 @@ function LectureVideo() {
   const [videoId, setVideoId] = useState(searchParams.get('videoId'));
   const [classId, setClassId] = useState(searchParams.get('classId'));
 
-  console.log('classId : ', classId);
-  console.log('videoId : ', videoId);
-
   const token = localStorage.getItem('Token');
 
   useEffect(() => {
@@ -27,11 +24,9 @@ function LectureVideo() {
       },
     })
       .then(response => {
-        console.log(response);
         return response.json();
       })
       .then(result => {
-        console.log('result : ', result);
         setLectureList(result.video);
       });
   }, []);
@@ -43,8 +38,6 @@ function LectureVideo() {
       }
     });
   }, [videoId, lectureList]);
-
-  console.log('lectureList : ', lectureList);
 
   return (
     <>
