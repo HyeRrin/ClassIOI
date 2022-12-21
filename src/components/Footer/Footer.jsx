@@ -63,14 +63,12 @@ function Footer() {
 }
 
 const FooterContainer = styled.footer`
-  width: 100%;
   border-top: 1px solid #e8e8e8;
 `;
 
 const ContentContainer = styled.div`
   ${props => props.theme.variables.flex('row', 'center', 'flex-start')}
   padding: 40px 0 64px 0;
-  width: 100%;
 `;
 
 const ContentLargeBox = styled.div`
