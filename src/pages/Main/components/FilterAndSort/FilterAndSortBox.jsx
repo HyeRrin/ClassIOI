@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 import FilterAndSortModal from './FilterAndSortModal';
 import { FaSortDown } from '@react-icons/all-files/fa/FaSortDown';

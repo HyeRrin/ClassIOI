@@ -1,4 +1,3 @@
-import React from 'react';
 import Modal from 'react-modal';
 import { useSearchParams } from 'react-router-dom';
 import * as style from './ModalStyle';

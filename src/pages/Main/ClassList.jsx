@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { FaHeart } from '@react-icons/all-files/fa/FaHeart';
@@ -74,6 +74,7 @@ function ClassList({
                 format: 'jpg',
               })
             }
+            loading="lazy"
             alt="thumbnail"
           />
         </ClassImgBox>
@@ -118,15 +119,12 @@ const LikeButton = styled.button`
 `;
 
 const ClassImgBox = styled.div`
-  width: 260px;
-  height: 200px;
   border-radius: 5px;
   overflow: hidden;
 `;
 
 const ClassImg = styled.img`
-  /* max-width: 100%;
-  height: 100%; */
+  aspect-ratio: 13/10;
   width: 260px;
   height: 200px;
   object-fit: cover;
