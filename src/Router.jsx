@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import { lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavVisibleComponents from 'NavVisibleComponents';
 const Login = lazy(() => import('pages/Login/Login'));
@@ -11,15 +11,17 @@ const CreatorCenter = lazy(() => import('pages/CreatorCenter/CreatorCenter'));
 const Router = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/kakaologin" element={<KakaoLogin />} />
-        <Route path="/subscribe" element={<Subscribe />} />
-        <Route path="/payment" element={<Payment />} />
-        <Route path="/creatorcenter" element={<CreatorCenter />} />
-        <Route path="/lecturevideo" element={<LectureVideo />} />
-        <Route path="/*" element={<NavVisibleComponents />} />
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/kakaologin" element={<KakaoLogin />} />
+          <Route path="/subscribe" element={<Subscribe />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/creatorcenter" element={<CreatorCenter />} />
+          <Route path="/lecturevideo" element={<LectureVideo />} />
+          <Route path="/*" element={<NavVisibleComponents />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 };
