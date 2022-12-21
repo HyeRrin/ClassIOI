@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import styled from 'styled-components';
 import ClassList from './ClassList';
@@ -64,7 +64,7 @@ function Main() {
   };
 
   return (
-    <>
+    <MainContainer>
       <SlideContainer>
         <SlideBox>
           <Carousel />
@@ -85,7 +85,9 @@ function Main() {
         </SlideBox>
       </SlideContainer>
 
-      <CategoryBoxTitle>전체 클래스</CategoryBoxTitle>
+      <CategoryBoxTitle width="1120px" height="25px">
+        전체 클래스
+      </CategoryBoxTitle>
 
       <CategoryContainer>
         <FilterAndSortBox
@@ -138,9 +140,13 @@ function Main() {
         <PageBtn onClick={() => movePage(3)}>3</PageBtn>
         <PageBtn>다음</PageBtn>
       </BtnContainer>
-    </>
+    </MainContainer>
   );
 }
+
+const MainContainer = styled.div`
+  height: 2500px;
+`;
 
 const SlideContainer = styled.div`
   margin: 122px 0 100px 0;
@@ -184,6 +190,7 @@ const CategoryContainer = styled.section`
 const CategoryBoxTitle = styled.p`
   margin: 0 auto 30px;
   width: 1120px;
+  height: 25px;
   font-size: 25px;
   font-weight: bold;
 `;
