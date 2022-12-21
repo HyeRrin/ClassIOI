@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -83,6 +82,8 @@ const ImageBox = styled.div`
 `;
 
 const Image = styled.img`
+  width: 676px;
+  height: 415px;
   border-radius: 5px;
 `;
 
