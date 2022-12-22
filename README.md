@@ -57,7 +57,7 @@
 
 ## 성능 개선 내용
 
-> 🚀 프로젝트가 끝난 이후, 개인적으로 성능 최적화 작업을 진행하였습니다. lighthouse를 통해 초기 <span style="color:red;font-weight:bold">18점</span>이었던 Performance 점수를 <span style="color:red;font-weight:bold">91점</span>까지 개선할 수 있었습니다.<br /> 성능 개선을 위해 노력을 기울인 내용은 아래의 내용과 같습니다. 더 자세한 성능 개선 시 마주한 문제와 해결 과정에 대한 내용은 <a href="https://velog.io/@hye_rin/lighthouse%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%84%B1%EB%8A%A5-%EC%B5%9C%EC%A0%81%ED%99%94">블로그 포스팅</a>을 통해 확인할 수 있습니다.
+> 🚀 프로젝트가 끝난 이후, 개인적으로 성능 최적화 작업을 진행하였습니다. lighthouse를 통해 초기 <strong>18점</strong>이었던 Performance 점수를 <strong>91점</strong>까지 개선할 수 있었습니다.<br /> 성능 개선을 위해 노력을 기울인 내용은 아래의 내용과 같습니다. 더 자세한 성능 개선 시 마주한 문제와 해결 과정에 대한 내용은 <a href="https://velog.io/@hye_rin/lighthouse%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%84%B1%EB%8A%A5-%EC%B5%9C%EC%A0%81%ED%99%94">블로그 포스팅</a>을 통해 확인할 수 있습니다.
 
 1. unsplash image cdn을 사용해 이미지 용량을 줄였습니다.
 2. `@react-icons/all-files`라이브러리를 사용하여 `react-icons` 번들 사이즈 줄였습니다.
