@@ -85,9 +85,7 @@ function Main() {
         </SlideBox>
       </SlideContainer>
 
-      <CategoryBoxTitle width="1120px" height="25px">
-        전체 클래스
-      </CategoryBoxTitle>
+      <CategoryBoxTitle>전체 클래스</CategoryBoxTitle>
 
       <CategoryContainer>
         <FilterAndSortBox
