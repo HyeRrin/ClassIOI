@@ -10,7 +10,8 @@
 ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=flat-square&logo=styled-components&logoColor=white)
 
 [🎥클래스IOI 시연영상](https://youtu.be/ggKWn5Ho6kc) <br />
-[📆클래스IOI Trello](https://trello.com/b/hqsVl1bu/ioi)
+[📆클래스IOI Trello](https://trello.com/b/hqsVl1bu/ioi) <br />
+[📝클래스IOI 회고록](https://velog.io/@hye_rin/%ED%81%B4%EB%9E%98%EC%8A%A4IOI-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D)
 
 </div>
 
@@ -68,7 +69,11 @@
 
 ## 블로그 포스팅
 
+### 🚀 성능 최적화에 대한 기록
+
 [![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api?name=hye_rin&slug=lighthouse를-이용한-성능-최적화&color=dark)](https://velog.io/@hye_rin/lighthouse%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%84%B1%EB%8A%A5-%EC%B5%9C%EC%A0%81%ED%99%94)
+
+### 📝 프로젝트 회고록
 
 [![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api?name=hye_rin&slug=클래스IOI-프로젝트-회고록&color=dark)](https://velog.io/@hye_rin/%ED%81%B4%EB%9E%98%EC%8A%A4IOI-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D)
 
